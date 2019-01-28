@@ -1,109 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="1" total="14" passed="13">
+<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="AgJunction API check" duration-ms="8184" started-at="2019-01-23T14:02:11Z" finished-at="2019-01-23T14:02:19Z">
+  <suite name="Default suite" duration-ms="21258" started-at="2019-01-28T10:19:27Z" finished-at="2019-01-28T10:19:48Z">
     <groups>
     </groups>
-    <test name="User-management" duration-ms="8184" started-at="2019-01-23T14:02:11Z" finished-at="2019-01-23T14:02:19Z">
-      <class name="com.qa.tester.GetAPIwithHeaders">
-        <test-method status="PASS" signature="setup()[pri:0, instance:com.qa.tester.GetAPIwithHeaders@2b2948e2]" name="setup" is-config="true" duration-ms="7" started-at="2019-01-23T14:02:11Z" finished-at="2019-01-23T14:02:11Z">
+    <test name="Default test" duration-ms="21258" started-at="2019-01-28T10:19:27Z" finished-at="2019-01-28T10:19:48Z">
+      <class name="com.qa.tester.sendAnEmail">
+        <test-method status="PASS" signature="f()[pri:0, instance:com.qa.tester.sendAnEmail@31dc339b]" name="f" duration-ms="21238" started-at="2019-01-28T10:19:27Z" finished-at="2019-01-28T10:19:48Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method status="PASS" signature="getAPITestWithHeaders()[pri:0, instance:com.qa.tester.GetAPIwithHeaders@2b2948e2]" name="getAPITestWithHeaders" duration-ms="1216" started-at="2019-01-23T14:02:11Z" finished-at="2019-01-23T14:02:12Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- getAPITestWithHeaders -->
-        <test-method status="PASS" signature="validateHeaders()[pri:0, instance:com.qa.tester.GetAPIwithHeaders@2b2948e2]" name="validateHeaders" duration-ms="1" started-at="2019-01-23T14:02:12Z" finished-at="2019-01-23T14:02:12Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- validateHeaders -->
-        <test-method status="PASS" signature="validateResponseData()[pri:0, instance:com.qa.tester.GetAPIwithHeaders@2b2948e2]" name="validateResponseData" duration-ms="9" started-at="2019-01-23T14:02:12Z" finished-at="2019-01-23T14:02:12Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- validateResponseData -->
-        <test-method status="PASS" signature="validateStatusCode()[pri:0, instance:com.qa.tester.GetAPIwithHeaders@2b2948e2]" name="validateStatusCode" duration-ms="1" started-at="2019-01-23T14:02:12Z" finished-at="2019-01-23T14:02:12Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- validateStatusCode -->
-        <test-method status="PASS" signature="teardown()[pri:0, instance:com.qa.tester.GetAPIwithHeaders@2b2948e2]" name="teardown" is-config="true" duration-ms="0" started-at="2019-01-23T14:02:12Z" finished-at="2019-01-23T14:02:12Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- teardown -->
-      </class> <!-- com.qa.tester.GetAPIwithHeaders -->
-      <class name="com.qa.tester.putAPITest">
-        <test-method status="PASS" signature="validatePut(java.lang.String, java.lang.String)[pri:0, instance:com.qa.tester.putAPITest@5a8e6209]" name="validatePut" duration-ms="886" started-at="2019-01-23T14:02:18Z" data-provider="getExcelData" finished-at="2019-01-23T14:02:19Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[Content-Type]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[application/json]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- validatePut -->
-        <test-method status="PASS" signature="validateResponseTime()[pri:0, instance:com.qa.tester.putAPITest@5a8e6209]" name="validateResponseTime" duration-ms="2" started-at="2019-01-23T14:02:19Z" finished-at="2019-01-23T14:02:19Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- validateResponseTime -->
-      </class> <!-- com.qa.tester.putAPITest -->
-      <class name="com.qa.tester.PostAPITest">
-        <test-method status="PASS" signature="setup()[pri:0, instance:com.qa.tester.PostAPITest@57536d79]" name="setup" is-config="true" duration-ms="1" started-at="2019-01-23T14:02:16Z" finished-at="2019-01-23T14:02:16Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method status="PASS" signature="PostAPItest()[pri:0, instance:com.qa.tester.PostAPITest@57536d79]" name="PostAPItest" duration-ms="983" started-at="2019-01-23T14:02:16Z" finished-at="2019-01-23T14:02:17Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- PostAPItest -->
-        <test-method status="PASS" signature="teardown()[pri:0, instance:com.qa.tester.PostAPITest@57536d79]" name="teardown" is-config="true" duration-ms="0" started-at="2019-01-23T14:02:17Z" finished-at="2019-01-23T14:02:17Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- teardown -->
-      </class> <!-- com.qa.tester.PostAPITest -->
-      <class name="com.qa.tester.deleteAPItest">
-        <test-method status="PASS" signature="deleteAPI()[pri:0, instance:com.qa.tester.deleteAPItest@3b0143d3]" name="deleteAPI" duration-ms="925" started-at="2019-01-23T14:02:17Z" finished-at="2019-01-23T14:02:18Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- deleteAPI -->
-      </class> <!-- com.qa.tester.deleteAPItest -->
-      <class name="com.qa.tester.GetAPIwithoutHeaders">
-        <test-method status="PASS" signature="setup()[pri:0, instance:com.qa.tester.GetAPIwithoutHeaders@6ddf90b0]" name="setup" is-config="true" duration-ms="1" started-at="2019-01-23T14:02:12Z" finished-at="2019-01-23T14:02:12Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method status="PASS" signature="getAPITestWithoutHeaders()[pri:0, instance:com.qa.tester.GetAPIwithoutHeaders@6ddf90b0]" name="getAPITestWithoutHeaders" duration-ms="3696" started-at="2019-01-23T14:02:12Z" finished-at="2019-01-23T14:02:16Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- getAPITestWithoutHeaders -->
-        <test-method status="PASS" signature="validateHeadersInResponse()[pri:0, instance:com.qa.tester.GetAPIwithoutHeaders@6ddf90b0]" name="validateHeadersInResponse" duration-ms="1" started-at="2019-01-23T14:02:16Z" finished-at="2019-01-23T14:02:16Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- validateHeadersInResponse -->
-        <test-method status="PASS" signature="validateResponseData()[pri:0, instance:com.qa.tester.GetAPIwithoutHeaders@6ddf90b0]" name="validateResponseData" duration-ms="2" started-at="2019-01-23T14:02:16Z" finished-at="2019-01-23T14:02:16Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- validateResponseData -->
-        <test-method status="PASS" signature="validateResponseTime()[pri:0, instance:com.qa.tester.GetAPIwithoutHeaders@6ddf90b0]" name="validateResponseTime" duration-ms="1" started-at="2019-01-23T14:02:16Z" finished-at="2019-01-23T14:02:16Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- validateResponseTime -->
-        <test-method status="PASS" signature="validateStatusCode()[pri:0, instance:com.qa.tester.GetAPIwithoutHeaders@6ddf90b0]" name="validateStatusCode" duration-ms="1" started-at="2019-01-23T14:02:16Z" finished-at="2019-01-23T14:02:16Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- validateStatusCode -->
-        <test-method status="PASS" signature="teardown()[pri:0, instance:com.qa.tester.GetAPIwithoutHeaders@6ddf90b0]" name="teardown" is-config="true" duration-ms="0" started-at="2019-01-23T14:02:16Z" finished-at="2019-01-23T14:02:16Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- teardown -->
-      </class> <!-- com.qa.tester.GetAPIwithoutHeaders -->
-    </test> <!-- User-management -->
-  </suite> <!-- AgJunction API check -->
+        </test-method> <!-- f -->
+      </class> <!-- com.qa.tester.sendAnEmail -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
 </testng-results>
