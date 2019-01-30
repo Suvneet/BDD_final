@@ -4,7 +4,6 @@ import org.json.JSONException;
 import org.json.JSONObject;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
-
 import com.qa.base.testbase;
 import com.qa.client.RestClient;
 import com.qa.util.TestUtil;
@@ -38,7 +37,6 @@ public class putAPITest extends testbase {
 			RestAssured.baseURI = prop.getProperty("URL");
 			//given().contentType("application/json")
 			BDD_response = given().header(key, value)
-			
 			.when().post(prop.getProperty("serviceURL"))
 			.then().extract().response();
 			System.out.println(key);

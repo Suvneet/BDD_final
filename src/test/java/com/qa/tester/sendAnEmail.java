@@ -1,11 +1,33 @@
 package com.qa.tester;
 
 import org.testng.annotations.Test;
-import org.apache.commons.mail.*;
+import org.testng.log4testng.Logger;
+import com.qa.base.testbase;
+import com.qa.client.RestClient;
 
-public class sendAnEmail {
-  @Test
-  public void f() throws EmailException {
+import io.restassured.response.Response;
+
+import org.apache.commons.mail.*;
+import org.apache.http.client.methods.CloseableHttpResponse;
+
+
+public class sendAnEmail extends testbase {
+	
+	testbase testbases;
+	String serviceURL;
+	String apiURL;
+	String url;
+	RestClient restClient;
+	CloseableHttpResponse closeAbleHttpResponse;
+	String userPerPage;
+	String totalpagesInResponse;
+	Response resp;
+	
+	@Test
+	public void f()  throws EmailException {
+	  
+	  
+	  
 	// Create the attachment
 	  /*EmailAttachment attachment = new EmailAttachment();
 	  attachment.setPath("C:\\Users\\Suvneet.Singh\\eclipse-workspace\\BDD_final\\target\\surefire-reports\\Extent.html");
@@ -51,13 +73,13 @@ public class sendAnEmail {
 	    	//HtmlEmail email = new HtmlEmail();
 	    	 MultiPartEmail email = new MultiPartEmail();
 	        //email.setDebug(debug);
-	        //email.setHostName("smtp.gmail.com");
-	        email.setHostName("outlook.office365.com");
+	        email.setHostName("smtp.gmail.com");
+	        //email.setHostName("outlook.office365.com");
 	        //String port = email.getSmtpPort();
 	        //System.out.println(port);
-	        email.addTo("suvneet.singh@rsystems.com");
-	        email.setFrom("suvneet.singh@rsystems.com");
-	        email.setAuthentication("suvneet.singh@rsystems.com", "zxcvbnm@2093");
+	        email.addTo(prop.getProperty("ToUserID"));
+	        email.setFrom(prop.getProperty("FromUserid"));
+	        email.setAuthentication(prop.getProperty("FromUserid"), prop.getProperty("password"));
 	        email.setSubject("TestNG results");
 	        //email.setHtmlMsg("<div style='font-size: 20px; color: green;'>This is html email</div>");
 	        email.setMsg("TestNG results");

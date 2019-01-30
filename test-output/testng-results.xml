@@ -2,16 +2,24 @@
 <testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="21258" started-at="2019-01-28T10:19:27Z" finished-at="2019-01-28T10:19:48Z">
+  <suite name="Default suite" duration-ms="10541" started-at="2019-01-30T13:41:29Z" finished-at="2019-01-30T13:41:40Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="21258" started-at="2019-01-28T10:19:27Z" finished-at="2019-01-28T10:19:48Z">
-      <class name="com.qa.tester.sendAnEmail">
-        <test-method status="PASS" signature="f()[pri:0, instance:com.qa.tester.sendAnEmail@31dc339b]" name="f" duration-ms="21238" started-at="2019-01-28T10:19:27Z" finished-at="2019-01-28T10:19:48Z">
+    <test name="Default test" duration-ms="10541" started-at="2019-01-30T13:41:29Z" finished-at="2019-01-30T13:41:40Z">
+      <class name="com.qa.tester.autoIT">
+        <test-method status="PASS" signature="launch_browser()[pri:0, instance:com.qa.tester.autoIT@71423665]" name="launch_browser" is-config="true" duration-ms="4761" started-at="2019-01-30T13:41:29Z" finished-at="2019-01-30T13:41:34Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- f -->
-      </class> <!-- com.qa.tester.sendAnEmail -->
+        </test-method> <!-- launch_browser -->
+        <test-method status="PASS" signature="upload_file()[pri:0, instance:com.qa.tester.autoIT@71423665]" name="upload_file" duration-ms="3122" started-at="2019-01-30T13:41:34Z" finished-at="2019-01-30T13:41:37Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- upload_file -->
+        <test-method status="PASS" signature="close_browser()[pri:0, instance:com.qa.tester.autoIT@71423665]" name="close_browser" is-config="true" duration-ms="2638" started-at="2019-01-30T13:41:37Z" finished-at="2019-01-30T13:41:40Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- close_browser -->
+      </class> <!-- com.qa.tester.autoIT -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

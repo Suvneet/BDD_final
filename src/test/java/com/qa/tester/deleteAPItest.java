@@ -31,5 +31,4 @@ public class deleteAPItest extends testbase{
 			.statusCode(RESPONSE_STATUS_CODE_204)
 			.extract().response();				
 	}
-	
 }
