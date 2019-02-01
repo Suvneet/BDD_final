@@ -15,7 +15,7 @@ import org.testng.annotations.Test;
 
 public class array {
 	
-	WebDriver driver;
+	static WebDriver driver;
 	
 	
 	@BeforeClass

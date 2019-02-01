@@ -1,7 +1,6 @@
 package com.qa.tester;
 
 import java.io.IOException;
-
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -18,7 +17,7 @@ public class autoIT {
 		System.setProperty("webdriver.chrome.driver", "C:\\Users\\Suvneet.Singh\\Downloads\\chromedriver.exe" );
 		driver = new ChromeDriver();
 		driver.manage().window().maximize();
-		driver.get("http://suvneet.singh:zxcvbnm@2093@rsyspedia.india.rsystems.com/SitePages/Home.aspx");	
+		//driver.get("http://suvneet.singh:zxcvbnm@2093@rsyspedia.india.rsystems.com/SitePages/Home.aspx");	
 	}
 	
 	@Test
