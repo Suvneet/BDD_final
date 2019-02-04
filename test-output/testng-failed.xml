@@ -3,14 +3,11 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.qa.tester.brokenlinks">
+      <class name="com.qa.tester.sikuli_garcia">
         <methods>
-          <include name="check_links"/>
-          <include name="active_links"/>
-          <include name="close"/>
-          <include name="initate_browser"/>
+          <include name="tests"/>
         </methods>
-      </class> <!-- com.qa.tester.brokenlinks -->
+      </class> <!-- com.qa.tester.sikuli_garcia -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

@@ -83,26 +83,28 @@ static WebDriver driver;
 		Thread.sleep(8000);
 		driver.quit();
 		WebDriverWait waiter = new WebDriverWait(driver, 10);
-		waiter.until(ExpectedConditions(driver.findElement(By.id("abc")).click()));
 		
-		@SuppressWarnings("deprecation")
+		
+		//WebElement click_here = waiter.until(ExpectedConditions.invisibilityOfElementLocated(driver.findElement(By.id(""))));
+		//click_here.click();
+
+		
+		/*@SuppressWarnings("deprecation")
 		Wait<WebDriver> wait = new FluentWait<WebDriver>(driver)
 				.withTimeout(10, TimeUnit.SECONDS)
 				.pollingEvery(10, TimeUnit.SECONDS)
 				.ignoring(Exception.class);
 		
-		Wait waits = new FluentWait(driver).
-				withTimeout(10, SECONDS)
-				.pollingEvery(10, SECONDS).ignoring(Exception.class);
+		@SuppressWarnings("deprecation")
+		Wait wait = new FluentWait<WebDriver>(driver)
+				.withTimeout(10, TimeUnit.SECONDS)
+				.pollingEvery(10, TimeUnit.SECONDS)
+				.ignoring(Exception.class);*/
+		
 		
 		Select dropdown = new Select(driver.findElement(By.id("")));
 		
 		
-	}
-
-	private Function ExpectedConditions(Object click) {
-		// TODO Auto-generated method stub
-		return null;
 	}
 	
 }
